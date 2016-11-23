@@ -547,7 +547,9 @@ a:link,a:visited  {
 	display: block;
 	float: left;
 	margin: 0 auto;
+  border-bottom: solid 1px black;
 	width: 100%;
+  box-shadow: 0px 0px 0px 2px #cccccc;
 }
 
 #access ul {}
@@ -834,7 +836,9 @@ body.nirvana-topbarfixed #topbar {
 	z-index: 300;
 	opacity: 0.8;
 }
-body.nirvana-topbarfixed #header-full { margin-top: 38px; }
+body.nirvana-topbarfixed #header-full {
+  margin-top: 38px;
+}
 body.nirvana-topbarfixed.admin-bar #topbar { top: 32px; }
 
 /* =Content

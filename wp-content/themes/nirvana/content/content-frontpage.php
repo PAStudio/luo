@@ -8,7 +8,7 @@
  */
 
 $nirvanas = nirvana_get_theme_options();
-foreach ($nirvanas as $key => $value) { ${"$key"} = $value; } 
+foreach ($nirvanas as $key => $value) { ${"$key"} = $value; }
 ?>
 
 		<section id="container" class="one-column <?php //echo nirvana_get_layout_class(); ?>">
@@ -16,19 +16,19 @@ foreach ($nirvanas as $key => $value) { ${"$key"} = $value; }
 			<div id="content" role="main">
 
 			<?php //cryout_before_content_hook();
-			
+
 			$nirvana_old_posts_per_page = get_option( 'posts_per_page' );
 
 			if ( have_posts() ) :
 
 				/* Start the Loop */
 				update_option( 'posts_per_page', $nirvanas['nirvana_frontpostscount']);
-				
+
 				$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
-				$the_query = new WP_Query( array('posts_per_page'=>$nirvanas['nirvana_frontpostscount'],'paged'=> $paged) ); 
-				while ( $the_query->have_posts() ) : $the_query->the_post(); 
- 
- 		            global $more; $more=0; 
+				$the_query = new WP_Query( array('posts_per_page'=>$nirvanas['nirvana_frontpostscount'],'paged'=> $paged) );
+				while ( $the_query->have_posts() ) : $the_query->the_post();
+
+ 		            global $more; $more=0;
 					get_template_part( 'content/content', get_post_format() );
 
 				endwhile;

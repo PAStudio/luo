@@ -398,7 +398,7 @@ function nirvana_set_featured_thumb() {
 		the_post_thumbnail( 'custom', array("class" => "align" . strtolower($nirvana_falign) . " post_thumbnail" ) );
 	} else if ($nirvana_fpost=='Enable' && $nirvana_fauto=="Enable" && $image_src ) {
 		echo '<a title="' . the_title_attribute('echo=0') . '" href="' . esc_url( get_permalink() ) . '" >
-			<img width="'. $nirvana_fwidth . '" title="" alt="" class="align' . strtolower($nirvana_falign) . ' post_thumbnail" src="' . $image_src.'"></a>' ;
+			 <img width="'. $nirvana_fwidth . '" title="" alt="" class="align' . strtolower($nirvana_falign) . ' post_thumbnail" src="' . $image_src.'"></a>' ;
 	}
 };
 endif; // nirvana_set_featured_thumb
