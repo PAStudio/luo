@@ -23,7 +23,9 @@ get_header();?>
 					</div><!-- .entry-meta -->
 
 					<div class="entry-content">
-						<?php the_content(); ?>
+            <div class="post-content">
+              <?php the_content(); ?>
+            </div>
 						<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'nirvana' ), 'after' => '</span></div>' ) ); ?>
 					</div><!-- .entry-content -->
 

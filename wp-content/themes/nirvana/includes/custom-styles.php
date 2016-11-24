@@ -50,7 +50,8 @@ function nirvana_custom_styles() {
 	foreach ($nirvanas as $key => $value) { ${"$key"} = $value; }
 	$totalwidth = $nirvana_sidewidth + $nirvana_sidebar;
 	$contentSize = $nirvana_sidewidth;
-	$sidebarSize= $nirvana_sidebar;
+	// $sidebarSize= $nirvana_sidebar;
+  $sidebarSize = 0.2 * $nirvana_sidewidth;
 	ob_start();
 
 ?>
@@ -90,8 +91,8 @@ $contentSize = $contentSize - 60;
 ?>
 #container.one-column { }
 #container.two-columns-right #secondary { width:<?php echo esc_html($sidebarSize); ?>px; float:right; }
-#container.two-columns-right #content { width:<?php echo esc_html($contentSize-$colPadding); ?>px; float:left; } /*fallback*/
-#container.two-columns-right #content { width:calc(100% - <?php echo esc_html($sidebarSize+$colPadding); ?>px); float:left; }
+#container.two-columns-right #content { width:<?php echo esc_html($contentSize-$colPadding); ?>px;} /*fallback*/
+#container.two-columns-right #content { width:calc(100% - <?php echo esc_html($sidebarSize+$colPadding); ?>px);}
 #container.two-columns-left #primary { width:<?php echo esc_html($sidebarSize); ?>px; float:left; }
 #container.two-columns-left #content { width:<?php echo esc_html($contentSize-$colPadding); ?>px; float:right; } /*fallback*/
 #container.two-columns-left #content { 	width:-moz-calc(100% - <?php echo esc_html($sidebarSize+$colPadding); ?>px); float:right;
@@ -100,8 +101,8 @@ $contentSize = $contentSize - 60;
 
 #container.three-columns-right .sidey { width:<?php echo esc_html($sidebarSize/2); ?>px; float:left; }
 #container.three-columns-right #primary { margin-left:<?php echo esc_html($colPadding); ?>px; margin-right:<?php echo esc_html($colPadding); ?>px; }
-#container.three-columns-right #content { width:<?php echo esc_html($contentSize-$colPadding*2); ?>px; float:left; } /*fallback*/
-#container.three-columns-right #content { 	width:-moz-calc(100% - <?php echo esc_html($sidebarSize+$colPadding*2); ?>px); float:left;
+#container.three-columns-right #content { width:<?php echo esc_html($contentSize-$colPadding*2); ?>px;} /*fallback*/
+#container.three-columns-right #content { 	width:-moz-calc(100% - <?php echo esc_html($sidebarSize+$colPadding*2); ?>px);
 											width:-webkit-calc(100% - <?php echo esc_html($sidebarSize+$colPadding*2); ?>px);
 											width:calc(100% - <?php echo esc_html($sidebarSize+$colPadding*2); ?>px);}
 
@@ -353,6 +354,10 @@ endfor; ?>
 #branding {
   height:<?php echo $nirvana_hheight; ?>px;
   background-color: #0F2145;
+}
+
+.list-img {
+  width: 270px;
 }
 <?php if ($nirvana_hratio) { ?> @media (max-width: 1920px) {#branding, #bg_image { height:auto; max-width:100%; min-height:inherit !important; } }	<?php } ?>
 </style>

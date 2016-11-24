@@ -160,6 +160,7 @@ a img {
 	border: none;
 }
 
+
 /* =Layout
 -------------------------------------------------------------- */
 
@@ -170,7 +171,11 @@ a img {
 }
 
 #content {
-	margin-bottom: 0;
+	margin: 0 auto;
+}
+
+.post-content img {
+  width: 100%;
 }
 
 .sidey {
@@ -3539,7 +3544,10 @@ header
 
 .language-bar {
   background-color: #0F2145;
+}
 
+.languages-list {
+  margin-right: 10px;
 }
 
 /* shareaddy fix */ .sharedaddy ul > li { background: none !important; text-indent: 0 !important; }

@@ -11,7 +11,7 @@
 $nirvanas = nirvana_get_theme_options();
 foreach ($nirvanas as $key => $value) { ${"$key"} = $value; }
 ?>
-		<div id="secondary" class="widget-area sidey" role="complementary" style="float: right;">
+		<div id="secondary" class="widget-area sidey languages-list" role="complementary" style="float: right;">
 		<?php cryout_before_primary_widgets_hook(); ?>
       <!-- <ul class="xoxo">
 				<?php if($nirvana_socialsdisplay2) { ?>
