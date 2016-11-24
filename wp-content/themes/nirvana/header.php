@@ -24,7 +24,7 @@
 <?php cryout_body_hook(); ?>
 
 <div id="wrapper" class="hfeed">
-<div id="topbar" ><div id="topbar-inner"> <?php cryout_topbar_hook(); ?> </div></div>
+<!-- <div id="topbar" ><div id="topbar-inner"> <?php cryout_topbar_hook(); ?> </div></div> -->
 <?php cryout_wrapper_hook(); ?>
 
 <div id="header-full">
@@ -37,20 +37,20 @@
 				<div style="clear:both;"></div>
 			</div><!-- #branding -->
 			<a id="nav-toggle"><span>&nbsp;</span></a>
+      <div class="language-bar">
+        <?php nirvana_get_sidebar(); ?>
+      </div>
 			<nav id="access" role="navigation">
 				<?php cryout_access_hook();?>
 			</nav><!-- #access -->
-			
-			
 		</div><!-- #masthead -->
 	</header><!-- #header -->
 </div><!-- #header-full -->
 
 <div style="clear:both;height:0;"> </div>
-<?php cryout_breadcrumbs_hook();?>
 <div id="main">
+  <?php cryout_breadcrumbs_hook();?>
 		<?php cryout_main_hook(); ?>
-	<div  id="forbottom" >
+	<div id="forbottom" >
 		<?php cryout_forbottom_hook(); ?>
-
 		<div style="clear:both;"> </div>

@@ -547,7 +547,9 @@ a:link,a:visited  {
 	display: block;
 	float: left;
 	margin: 0 auto;
+  border-bottom: solid 1px black;
 	width: 100%;
+  box-shadow: 1px 2px 2px 1px #cccccc;
 }
 
 #access ul {}
@@ -834,7 +836,9 @@ body.nirvana-topbarfixed #topbar {
 	z-index: 300;
 	opacity: 0.8;
 }
-body.nirvana-topbarfixed #header-full { margin-top: 38px; }
+body.nirvana-topbarfixed #header-full {
+  margin-top: 38px;
+}
 body.nirvana-topbarfixed.admin-bar #topbar { top: 32px; }
 
 /* =Content
@@ -3531,6 +3535,11 @@ header
 
 .magazine-layout .entry-header {
 	clear: both;
+}
+
+.language-bar {
+  background-color: #0F2145;
+
 }
 
 /* shareaddy fix */ .sharedaddy ul > li { background: none !important; text-indent: 0 !important; }

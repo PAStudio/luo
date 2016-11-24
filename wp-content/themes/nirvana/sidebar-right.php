@@ -11,10 +11,9 @@
 $nirvanas = nirvana_get_theme_options();
 foreach ($nirvanas as $key => $value) { ${"$key"} = $value; }
 ?>
-		<div id="secondary" class="widget-area sidey" role="complementary">
+		<div id="secondary" class="widget-area sidey" role="complementary" style="float: right;">
 		<?php cryout_before_primary_widgets_hook(); ?>
-
-			<ul class="xoxo">
+      <!-- <ul class="xoxo">
 				<?php if($nirvana_socialsdisplay2) { ?>
 					<li id="socials-left" class="widget-container">
 					<?php nirvana_smenur_socials(); ?>
@@ -30,7 +29,7 @@ foreach ($nirvanas as $key => $value) { ${"$key"} = $value; }
 					?></p>
 				</li>
 				<?php endif; ?>
-			</ul>
+			</ul> -->
 
 			<?php cryout_after_primary_widgets_hook(); ?>
 

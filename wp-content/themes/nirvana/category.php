@@ -12,7 +12,7 @@ get_header(); ?>
 		<section id="container" class="<?php echo nirvana_get_layout_class(); ?>">
 			<div id="content" role="main">
 			<?php cryout_before_content_hook(); ?>
-			
+
 			<?php if ( have_posts() ) : ?>
 
 				<header class="page-header">
@@ -56,10 +56,10 @@ get_header(); ?>
 				</article><!-- #post-0 -->
 
 			<?php endif; ?>
-			
+
 			<?php cryout_after_content_hook(); ?>
 			</div><!-- #content -->
-		<?php nirvana_get_sidebar(); ?>
+		    <?php nirvana_get_sidebar(); ?>
 		</section><!-- #primary -->
 
 <?php get_footer(); ?>

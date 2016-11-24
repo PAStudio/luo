@@ -65,7 +65,7 @@ function nirvana_custom_styles() {
 <?php
 /* BOXED LAYOUT */
 if ($nirvana_duality == 'Boxed') { ?>
-#header-full, #breadcrumbs, #main { max-width: <?php echo esc_html($totalwidth); ?>px; margin:0 auto; }
+#header-full, #breadcrumbs, #main { max-width: 100%; margin: 0; }
 #access > .menu > ul { margin-left:0; }
 #pp-texttop, #pp-textmiddle, #pp-textbottom, #front-columns h2, .presentation-page #content {
 		padding-left:20px !important; padding-right: 20px !important; }
@@ -176,7 +176,9 @@ border-bottom-color: <?php echo esc_html($nirvana_accentcolord);?>;
 }
 #access ul ul li a {color:<?php echo esc_html($nirvana_submenucolortxtdefault); ?>}
 #access ul ul li:hover {background:<?php echo esc_html(cryout_hexadder($nirvana_submenucolorbgdefault,'14'));?>}
-#breadcrumbs {background:<?php echo esc_html(cryout_hexadder($nirvana_backcolormain,'-10'));?>}
+#breadcrumbs {
+  /*background:<?php echo esc_html(cryout_hexadder($nirvana_backcolormain,'-10'));?>*/*/
+}
 #access ul ul li.current_page_item, #access ul ul li.current-menu-item,
 #access ul ul li.current_page_ancestor , #access ul ul li.current-menu-ancestor  {
 background-color:<?php echo esc_html(cryout_hexadder($nirvana_submenucolorbgdefault,'14'));?>; }
@@ -190,7 +192,9 @@ background-color:<?php echo esc_html(cryout_hexadder($nirvana_submenucolorbgdefa
 .topmenu ul li a:hover { color: <?php echo esc_html($nirvana_topmenucolortxthover); ?>; background-color: <?php echo esc_html($nirvana_accentcolora); ?>; }
 .search-icon:hover:before  { color: <?php echo esc_html($nirvana_accentcolora); ?>; }
 
-#main { background-color: <?php echo esc_html($nirvana_contentcolorbg); ?>; }
+#main {
+  background-color: <?php echo esc_html($nirvana_contentcolorbg); ?>;
+}
 #author-info, #entry-author-info, .page-title { border-color: <?php echo esc_html($nirvana_accentcolord); ?>; }
 .page-title-text {border-color: <?php echo esc_html($nirvana_accentcolorb); ?>; }
 .page-title span {border-color: <?php echo esc_html($nirvana_accentcolora); ?>; }
@@ -340,13 +344,16 @@ endfor; ?>
 
 #toTop:hover .icon-back2top:before {color:<?php echo esc_html($nirvana_accentcolorb);?>;}
 
-#main {margin-top:<?php echo esc_html($nirvana_contentmargintop);?>px; }
+/*#main {margin-top:<?php echo esc_html($nirvana_contentmargintop);?>px; }*/
 #forbottom {padding-left: <?php echo esc_html($nirvana_contentpadding);?>px; padding-right: <?php echo esc_html($nirvana_contentpadding);?>px;}
 #header-widget-area { width: <?php echo esc_html($nirvana_headerwidgetwidth); ?>; }
 <?php
 ////////// HEADER IMAGE //////////
 ?>
-#branding { height:<?php echo $nirvana_hheight; ?>px; }
+#branding {
+  height:<?php echo $nirvana_hheight; ?>px;
+  background-color: #0F2145;
+}
 <?php if ($nirvana_hratio) { ?> @media (max-width: 1920px) {#branding, #bg_image { height:auto; max-width:100%; min-height:inherit !important; } }	<?php } ?>
 </style>
 <?php

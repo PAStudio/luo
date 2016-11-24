@@ -194,7 +194,7 @@ function nirvana_breadcrumbs() {
 
 	$showOnHome = 1; 									// 1 - show breadcrumbs on the homepage, 0 - don't show
 	$separator = '<i class="icon-angle-right"></i>'; 	// separator between crumbs
-	$home = '<a href="'.esc_url( home_url() ).'"><i class="icon-homebread"></i><span class="screen-reader-text">' . __('Home', 'nirvana') . '</span></a>'; // text for the 'Home' link
+	$home = '<a href="'.esc_url( home_url() ).'"><span class="home-icon">HOME</span><span class="screen-reader-text">' . __('Home', 'nirvana') . '</span></a>'; // text for the 'Home' link
 	$showCurrent = 1; 									// 1 - show current post/page title in breadcrumbs, 0 - don't show
 	$before = '<span class="current">'; 				// tag before the current crumb
 	$after = '</span>'; 								// tag after the current crumb
@@ -204,7 +204,7 @@ function nirvana_breadcrumbs() {
 	if (is_front_page() && $nirvana_frontpage=="Enable") { return; }
 	if (is_home() && $nirvana_frontpage!="Enable") {
 
-		if ($showOnHome == 1) echo '<div id="breadcrumbs"><div id="breadcrumbs-box"><a href="' . $homeLink . '"><i class="icon-homebread"></i>' .  __('Home Page','nirvana') . '</a></div></div>';
+		if ($showOnHome == 1) echo '<div id="breadcrumbs"><div id="breadcrumbs-box"><a href="' . $homeLink . '"><span class="home-icon">HOME</span>' .  __('Home Page','nirvana') . '</a></div></div>';
 
 	} else {
 
