@@ -37,6 +37,9 @@
 				<div style="clear:both;"></div>
 			</div><!-- #branding -->
 			<a id="nav-toggle"><span>&nbsp;</span></a>
+      <div class="language-bar">
+        <?php nirvana_get_sidebar(); ?>
+      </div>
 			<nav id="access" role="navigation">
 				<?php cryout_access_hook();?>
 			</nav><!-- #access -->
