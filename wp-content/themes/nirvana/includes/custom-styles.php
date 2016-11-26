@@ -357,7 +357,7 @@ endfor; ?>
 }
 
 .list-img {
-  width: 270px;
+  width: 500px;
 }
 <?php if ($nirvana_hratio) { ?> @media (max-width: 1920px) {#branding, #bg_image { height:auto; max-width:100%; min-height:inherit !important; } }	<?php } ?>
 </style>

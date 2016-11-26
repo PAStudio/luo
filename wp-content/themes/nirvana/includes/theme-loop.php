@@ -395,10 +395,10 @@ function nirvana_set_featured_thumb() {
 
 	$image_src = cryout_echo_first_image($post->ID);
 	if ( function_exists("has_post_thumbnail") && has_post_thumbnail() && $nirvana_fpost=='Enable') {
-		the_post_thumbnail( 'custom', array("class" => "alignleft post_thumbnail list-img" ) );
+		the_post_thumbnail( 'custom', array("class" => "align" . strtolower($nirvana_falign) . " post_thumbnail list-img" ) );
 	} else if ($nirvana_fpost=='Enable' && $nirvana_fauto=="Enable" && $image_src ) {
 		echo '<a title="' . the_title_attribute('echo=0') . '" href="' . esc_url( get_permalink() ) . '" >
-			 <img  title="" alt="" class="alignleft post_thumbnail list-img" src="' . $image_src.'"></a>' ;
+			 <img  title="" alt="" class="align' . strtolower($nirvana_falign) . ' post_thumbnail list-img" src="' . $image_src.'"></a>' ;
 	}
 };
 endif; // nirvana_set_featured_thumb
