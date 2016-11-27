@@ -68,15 +68,15 @@ msgctxt "Used before post author name."
 msgid "Author"
 msgstr "作者"
 
-#: inc/template-tags.php:76
-msgctxt "Used before publish date."
-msgid "Posted on"
-msgstr "發佈於"
-
 #: inc/template-tags.php:55
 msgctxt "Used before post format."
 msgid "Format"
 msgstr "格式"
+
+#: inc/template-tags.php:76
+msgctxt "Used before publish date."
+msgid "Posted on"
+msgstr "發佈於"
 
 #: inc/template-tags.php:49
 msgid "Featured"
@@ -122,26 +122,26 @@ msgstr "預設"
 msgid "Header and Sidebar Background Color"
 msgstr "頁首與側邊欄背景顏色"
 
-#: inc/customizer.php:60 inc/customizer.php:76 inc/customizer.php:81
-msgid "Applied to the header on small screens and the sidebar on wide screens."
-msgstr "在較小的螢幕上將顯示在頂部，在較寬的螢幕上將顯示到側邊欄。"
-
 #: inc/customizer.php:59
 msgid "Header and Sidebar Text Color"
 msgstr "頁首與側邊欄文字顏色"
+
+#: inc/customizer.php:60 inc/customizer.php:76 inc/customizer.php:81
+msgid "Applied to the header on small screens and the sidebar on wide screens."
+msgstr "在較小的螢幕上將顯示在頂部，在較寬的螢幕上將顯示到側邊欄。"
 
 #: inc/customizer.php:44
 msgid "Base Color Scheme"
 msgstr "基本色調"
 
-#: inc/back-compat.php:37 inc/back-compat.php:47 inc/back-compat.php:60
-msgid "Twenty Fifteen requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again."
-msgstr "「貳零壹伍」要求 WordPress 4.1 版或以上。你現在使用的是 %s 版。請升級並重試。"
-
 #: image.php:84
 msgctxt "Parent post link"
 msgid "<span class=\"meta-nav\">Published in</span><span class=\"post-title\">%title</span>"
 msgstr "<span class=\"meta-nav\">發佈於</span><span class=\"post-title\">%title</span>"
+
+#: inc/back-compat.php:37 inc/back-compat.php:47 inc/back-compat.php:60
+msgid "Twenty Fifteen requires at least WordPress version 4.1. You are running version %s. Please upgrade and try again."
+msgstr "「貳零壹伍」要求 WordPress 4.1 版或以上。你現在使用的是 %s 版。請升級並重試。"
 
 #: image.php:24
 msgid "Next Image"
@@ -159,21 +159,13 @@ msgstr "選單與小工具"
 msgid "Skip to content"
 msgstr "跳至內容"
 
-#: functions.php:270
-msgid "collapse child menu"
-msgstr " 收合子選單"
-
 #: functions.php:269
 msgid "expand child menu"
 msgstr "展開子選單"
 
-#. Translators: To add an additional character subset specific to your
-#. language, translate this to 'greek', 'cyrillic', 'devanagari' or
-#. 'vietnamese'. Do not translate into your own language.
-#: functions.php:199
-msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
-msgid "no-subset"
-msgstr "no-subset"
+#: functions.php:270
+msgid "collapse child menu"
+msgstr " 收合子選單"
 
 #. Translators: If there are characters in your language that are not supported
 #. by Inconsolata, translate this to 'off'. Do not translate into your own
@@ -182,6 +174,14 @@ msgstr "no-subset"
 msgctxt "Inconsolata font: on or off"
 msgid "on"
 msgstr "on"
+
+#. Translators: To add an additional character subset specific to your
+#. language, translate this to 'greek', 'cyrillic', 'devanagari' or
+#. 'vietnamese'. Do not translate into your own language.
+#: functions.php:199
+msgctxt "Add new subset (greek, cyrillic, devanagari, vietnamese)"
+msgid "no-subset"
+msgstr "no-subset"
 
 #. Translators: If there are characters in your language that are not supported
 #. by Noto Serif, translate this to 'off'. Do not translate into your own

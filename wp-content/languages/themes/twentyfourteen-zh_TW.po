@@ -76,13 +76,13 @@ msgstr "藝廊"
 msgid "More links"
 msgstr "更多鏈結"
 
-#: inc/widgets.php:91 taxonomy-post_format.php:45
-msgid "Links"
-msgstr "鏈結"
-
 #: inc/widgets.php:88
 msgid "More quotes"
 msgstr "更多引文"
+
+#: inc/widgets.php:91 taxonomy-post_format.php:45
+msgid "Links"
+msgstr "鏈結"
 
 #: inc/widgets.php:87 taxonomy-post_format.php:42
 msgid "Quotes"
@@ -204,13 +204,13 @@ msgstr "使用<a href=\"%1$s\">標籤</a>來標記出特色文章。如果沒有
 msgid "Featured Content"
 msgstr "特色內容"
 
-#: inc/customizer.php:47 inc/customizer.php:48
-msgid "Background may only be visible on wide screens."
-msgstr "背景可能只在寬螢幕上可見。"
-
 #: inc/customizer.php:44 inc/customizer.php:45
 msgid "May only be visible on wide screens."
 msgstr "只能在寬螢幕上顯示。"
+
+#: inc/customizer.php:47 inc/customizer.php:48
+msgid "Background may only be visible on wide screens."
+msgstr "背景可能只在寬螢幕上可見。"
 
 #: inc/customizer.php:40
 msgid "Display Site Title &amp; Tagline"
