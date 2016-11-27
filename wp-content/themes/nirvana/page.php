@@ -24,7 +24,7 @@ else :
 
 			<?php cryout_after_content_hook(); ?>
 			</div><!-- #content -->
-			<?php nirvana_get_sidebar(); ?>
+        <?php nirvana_get_sidebar(); ?>
 		</section><!-- #container -->
 
 

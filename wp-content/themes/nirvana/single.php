@@ -12,7 +12,7 @@ get_header();?>
 		<section id="container" class="<?php echo nirvana_get_layout_class(); ?>">
 			<div id="content" role="main">
 			<?php cryout_before_content_hook(); ?>
-			
+
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -23,7 +23,9 @@ get_header();?>
 					</div><!-- .entry-meta -->
 
 					<div class="entry-content">
-						<?php the_content(); ?>
+            <div class="post-content">
+              <?php the_content(); ?>
+            </div>
 						<?php wp_link_pages( array( 'before' => '<div class="page-link"><span>' . __( 'Pages:', 'nirvana' ), 'after' => '</span></div>' ) ); ?>
 					</div><!-- .entry-content -->
 

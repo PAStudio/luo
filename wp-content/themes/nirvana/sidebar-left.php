@@ -35,4 +35,3 @@ foreach ($nirvanas as $key => $value) { ${"$key"} = $value; }
 			<?php cryout_after_primary_widgets_hook(); ?>
 
 		</div>
-
