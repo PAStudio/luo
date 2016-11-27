@@ -23,9 +23,7 @@ foreach ($nirvanas as $key => $value) { ${"$key"} = $value; }
 ?>
 
 <div id="frontpage">
-
 	<?php nirvana_ppslider(); ?>
-
 	<div id="pp-afterslider" class="entry-content">
 	<?php
 	// First FrontPage Title
