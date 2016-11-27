@@ -3260,6 +3260,21 @@ a.nivo-imageLink  {
 }
 
 /* AJAX LOAD MORE POSTS BUTTON */
+#more-article{
+	display: table;
+	float: none;
+	clear: both;
+	min-width: 160px;
+	padding: 7px 15px;
+	margin: 0 auto;
+	text-align: center;
+	cursor: pointer;
+	font-size: 16px;
+  border: 1px solid;
+	border-radius: 4px;
+	-webkit-transition: background-color .2s ease-in-out;
+	transition: background-color .2s ease-in-out;
+}
 #cryout_ajax_more_trigger{
 	display: table;
 	float: none;
