@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 4.6.x package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-11-24 19:08:22+0000\n"
+"PO-Revision-Date: 2016-11-10 22:00:48+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -732,7 +732,7 @@ msgstr "Beitrags-Feed (<abbr title=\"Really Simple Syndication\">RSS</abbr>)"
 
 #: wp-includes/widgets/class-wp-widget-meta.php:30
 msgid "Login, RSS, &amp; WordPress.org links."
-msgstr "Anmelde-, RSS-, &amp; WordPress.org-Links."
+msgstr "Login-, RSS-, &amp; WordPress.org-Links."
 
 #: wp-includes/widgets/class-wp-widget-links.php:161
 msgid "Number of links to show:"
@@ -1019,7 +1019,7 @@ msgstr "Der ausgeschriebene Name darf nicht länger als 50 Zeichen sein."
 
 #: wp-includes/user.php:1432
 msgid "Cannot create a user with an empty login name."
-msgstr "Es kann kein neuer Benutzer anlegt werden, wenn der Anmeldename leer ist."
+msgstr "Ohne Benutzername kann kein neuer Benutzer angelegt werden."
 
 #. translators: 1: display name, 2: user_login
 #: wp-includes/user.php:1093
@@ -1788,7 +1788,7 @@ msgstr "Permalink gespeichert"
 
 #: wp-includes/script-loader.php:551
 msgid "Saving Draft&#8230;"
-msgstr "Entwurf wird gespeichert&#160;&hellip;"
+msgstr "Entwurf wird gespeichert&#8230;"
 
 #: wp-includes/script-loader.php:548
 msgid "Privately Published"
@@ -1922,7 +1922,7 @@ msgstr "Link ausgewählt."
 
 #: wp-includes/script-loader.php:408
 msgid "Hide password"
-msgstr "Passwort verbergen"
+msgstr "Passwort verstecken"
 
 #: wp-includes/script-loader.php:407
 msgid "Show password"
@@ -1930,7 +1930,7 @@ msgstr "Passwort anzeigen"
 
 #: wp-includes/script-loader.php:405
 msgid "Hide"
-msgstr "Verbergen"
+msgstr "Verstecken"
 
 #: wp-includes/script-loader.php:404
 msgid "Show"
@@ -6088,7 +6088,7 @@ msgstr "Die URL zum Adminbereich"
 
 #: wp-includes/class-wp-xmlrpc-server.php:436
 msgid "Login Address (URL)"
-msgstr "Anmeldeadresse (URL)"
+msgstr "Login-Adresse (URL)"
 
 #: wp-includes/class-wp-xmlrpc-server.php:431
 msgid "Site Address (URL)"
@@ -6785,23 +6785,23 @@ msgstr "Aktion"
 
 #: wp-includes/class-wp-editor.php:1066
 msgid "Letter"
-msgstr "Zeichen"
+msgstr "Buchstabe"
 
 #: wp-includes/class-wp-editor.php:1065
 msgid "Ctrl + letter:"
-msgstr "Strg + Zeichen:"
+msgstr "Strg + Buchstabe:"
 
 #: wp-includes/class-wp-editor.php:1064
 msgid "Cmd + letter:"
-msgstr "Cmd + Zeichen:"
+msgstr "Cmd + Buchstabe:"
 
 #: wp-includes/class-wp-editor.php:1063
 msgid "Shift + Alt + letter:"
-msgstr "Shift + Alt + Zeichen:"
+msgstr "Shift + Alt + Buchstabe:"
 
 #: wp-includes/class-wp-editor.php:1062
 msgid "Ctrl + Alt + letter:"
-msgstr "Strg + Alt + Zeichen:"
+msgstr "Strg + Alt + Buchstabe:"
 
 #: wp-includes/class-wp-editor.php:1061
 msgid "Elements path"
