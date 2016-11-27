@@ -32,8 +32,18 @@ foreach ($nirvanas as $key => $value) { ${"$key"} = $value; }
 	if($nirvana_fronttext1 || $nirvana_fronttext3) { ?><div id="pp-texttop"><?php
 	if($nirvana_fronttext1) {?><div id="front-text1" class="ppbox"> <h2><?php echo do_shortcode($nirvana_fronttext1) ?> </h2></div><?php }
 	if($nirvana_fronttext3) {?><div id="front-text3" class="ppbox"> <?php echo do_shortcode($nirvana_fronttext3) ?></div><?php }
-	?></div><?php }
-
+	?></div><?php } ?>
+  <?php
+  if ($nirvanas['nirvana_excerpttype']=='Characters') {
+    add_filter( 'get_the_excerpt', 'nirvana_excerpt_length_chars' );
+  } else {
+    remove_filter( 'excerpt_length', 'nirvana_excerpt_length_slider', 999 );
+    remove_filter( 'excerpt_more', 'nirvana_excerpt_more_slider', 999 );
+    add_filter( 'excerpt_length', 'nirvana_excerpt_length_words' );
+    add_filter( 'get_the_excerpt', 'nirvana_custom_excerpt_more',10 );
+  }
+  if ($nirvana_frontposts=="Enable"): get_template_part('content/content', 'frontpage'); endif; ?>
+  <?php
 	nirvana_ppcolumns();
 
 	if($nirvana_fronttext2 || $nirvana_fronttext4) {?><div id="pp-textmiddle"><?php
@@ -41,16 +51,8 @@ foreach ($nirvanas as $key => $value) { ${"$key"} = $value; }
 	if($nirvana_fronttext2) {?><div id="front-text2" class="ppbox"> <h2><?php echo do_shortcode($nirvana_fronttext2) ?> </h2></div><?php }
 	// Frontpage second text area
 	if($nirvana_fronttext4) {?><div id="front-text4" class="ppbox"> <?php echo do_shortcode($nirvana_fronttext4) ?> </div><?php }
-	?></div><?php }
-	if ($nirvanas['nirvana_excerpttype']=='Characters') {
-		add_filter( 'get_the_excerpt', 'nirvana_excerpt_length_chars' );
-	} else {
-		remove_filter( 'excerpt_length', 'nirvana_excerpt_length_slider', 999 );
-		remove_filter( 'excerpt_more', 'nirvana_excerpt_more_slider', 999 );
-		add_filter( 'excerpt_length', 'nirvana_excerpt_length_words' );
-		add_filter( 'get_the_excerpt', 'nirvana_custom_excerpt_more',10 );
-	}
-	if ($nirvana_frontposts=="Enable"): get_template_part('content/content', 'frontpage'); endif; ?>
+	?></div><?php } ?>
+
 
 	<?php
 	// Third FrontPage Title/Text

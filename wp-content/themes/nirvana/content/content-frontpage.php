@@ -25,8 +25,13 @@ foreach ($nirvanas as $key => $value) { ${"$key"} = $value; }
 				update_option( 'posts_per_page', $nirvanas['nirvana_frontpostscount']);
 
 				$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;
-				$the_query = new WP_Query( array('posts_per_page'=>$nirvanas['nirvana_frontpostscount'],'paged'=> $paged) );
-				while ( $the_query->have_posts() ) : $the_query->the_post();
+				$the_query1 = new WP_Query( array('cat'=>6,'posts_per_page'=>1,'paged'=> $paged) );
+        $the_query2 = new WP_Query( array('cat'=>5,'posts_per_page'=>1,'paged'=> $paged) );
+        $wp_query = new WP_query();
+        $wp_query->posts = array_merge($the_query1->posts,$the_query2->posts);
+        $wp_query->post_count = count($wp_query->posts);
+
+				while ( $wp_query->have_posts() ) : $wp_query->the_post();
 
  		            global $more; $more=0;
 					get_template_part( 'content/content', get_post_format() );
