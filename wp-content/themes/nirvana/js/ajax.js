@@ -15,7 +15,7 @@ jQuery(document).ready(function($) {
 		/* Insert the "More Posts" link. */
 		$(cryout_ajax_more.content_css_selector)
 			.append('<div id="cryout_ajax_more_placeholder_'+ page_number_next +'"></div>')
-			.append('<a href="http://localhost:8080/luo/?cat=6"><div id="more-article">{loadmore}</div></a>'.replace('{loadmore}', cryout_ajax_more.load_more_str));
+			.append('<a href="http://lodrorinchen.org/category/%E5%B0%88%E9%A1%8C%E6%96%87%E7%AB%A0/"><div id="more-article">{loadmore}</div></a>'.replace('{loadmore}', cryout_ajax_more.load_more_str));
 
 		/* Remove the traditional navigation. */
 		$(cryout_ajax_more.pagination_css_selector).remove();
